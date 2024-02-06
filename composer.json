@@ -1,0 +1,16 @@
+{
+    "name": "natspace/natspace-php",
+    "description": "natspace php extensions",
+    "type": "project",
+    "require": {
+        "stripe/stripe-php": "^13.7",
+        "phpseclib/phpseclib": "^3.0",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "authors": [
+        {
+            "name": "nerzus"
+        }
+    ],
+    "minimum-stability": "stable"
+}

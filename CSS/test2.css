@@ -1,0 +1,43 @@
+
+     *, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 560px;
+  margin: 0 auto;
+  height: 560px;
+}
+
+.slider img {
+  max-width: 100%;
+  display: none;
+}
+img.active {
+  display: block;
+  animation: fade 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn {
+  width: 560px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: -300px;
+}
+.btn-nav {
+  font-size: 50px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+  

@@ -1,0 +1,30 @@
+::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider img {
+  display: none;
+}
+img.active {
+  display: block;
+  animation: fade 1s;
+}
+.absolute_animation{
+	top: 50%;left: 50%;position: absolute;z-index: 5;transform: translate(-50%, -50%);
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.btn-nav {
+  font-size: 50px;
+  margin: 0 15px;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+}
