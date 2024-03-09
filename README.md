@@ -45,7 +45,15 @@ If the server needs to update multiple clients about a change (like a chat messa
 
 ## Verify System
 
-...
+After connecting to the site, the **web server** creates `tmp` and `id` **cookies** for the user *(the option to refuse cookies is under development)*. This cookie is essential as it serves as the **authentication key** throughout the session. With **every page change**, the `verify.php` script is executed to ensure the **session's authenticity**. This script **checks** if the `tmp`and `id` cookies **exist** and are **not empty**. It then retrieves the `tmp` value associated with the user's identifier `('id')` from the database. If the `tmp` value in the database **matches the one stored in the cookie**, the user is considered **authentic**. At this point, a new 'tmp' is **generated** and **updated** in the database and the cookie, rendering the previous value **obsolete and preventing session hijacking** if someone intercepts the cookie's value.
+
+<img src="https://i.imgur.com/hIEV5n9.png" width="100%" />
+
+`verify_sys.php` is used for sensitive operations like **data modification or deletion**. Unlike `verify.php`, this script retrieves the user identifier not from the `id` cookie but using a value **transmitted via `POST`**, specified by the `$_POST[$id_name]` variable. It then checks if the `tmp` value **matches** the expected one for this identifier. If the match is not found, the script **terminates execution**. This prevents any **unauthorized action**, even if someone manages to obtain the `tmp`, because without the **correct identifier transmitted in POST**, **access will be denied**.
+
+**The mechanism of regenerating** `tmp` on each page is similar to the **system used in modern car keys**, where the code transmitted between the key and the car changes with **each use**, thus preventing theft by **signal interception**. In this way, even if an **attacker intercepts** the `tmp` cookie, they will **not be able to use it** for further authentication, as this cookie will have already been replaced by a **new one**, just like the car key code that changes with **each use** to prevent **malicious reuse**.
+
+<img src="https://i.imgur.com/JUwiVUn.png" width="100%" />
 
 ## Login page
 The login/registration page is the first thing your website offers your new user. For registration, I ask for several personal details, such as username, e-mail address, password, date of birth, general terms and conditions of use and sale, as well as for whom the account is intended (woman, man or couple).
