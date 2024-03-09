@@ -53,7 +53,7 @@ After connecting to the site, the **web server** creates `tmp` and `id` **cookie
 
 **The mechanism of regenerating** `tmp` on each page is similar to the **system used in modern car keys**, where the code transmitted between the key and the car changes with **each use**, thus preventing theft by **signal interception**. In this way, even if an **attacker intercepts** the `tmp` cookie, they will **not be able to use it** for further authentication, as this cookie will have already been replaced by a **new one**, just like the car key code that changes with **each use** to prevent **malicious reuse**.
 
-<img src="https://i.imgur.com/JUwiVUn.png" width="100%" />
+<img src="https://i.imgur.com/nbvpsaE.png" width="100%" />
 
 ## Login page
 The login/registration page is the first thing your website offers your new user. For registration, I ask for several personal details, such as username, e-mail address, password, date of birth, general terms and conditions of use and sale, as well as for whom the account is intended (woman, man or couple).
