@@ -1,0 +1,942 @@
+* {
+  box-sizing:border-box; 
+  outline:none;
+  margin:0;
+  padding:0;
+  font-family: verdana;
+}
+#hide{
+  background-color: #1F0BD9;
+  height: 100%;
+  width: 100%;
+}
+.login{
+  background-color: #0b1616;
+}
+.firstname, .lastname{
+  border-radius: 50px;
+  height: 50px;
+  width: 187.5px;
+  margin-top: 8px;
+  border: 2px outset black;
+  padding-left: 10px;
+}
+.lastname{
+  margin-left: 5px;
+}
+html,
+body {
+   height: 100%;
+  }
+@media screen and (min-width:1280px) and (max-height:743px){
+  /*REGISTER PAGE*/
+  .hidencgutwo{
+    display: none;
+  }
+  .form{
+    height: 604px;
+    width: 440px;
+    background-color: white;
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 30px;
+    box-shadow: 5px 4px 6px black;
+  }
+  .registerform, .loginform{
+    position: absolute; 
+    top: 54%; left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  .registerform{
+    margin-top: 4px;
+  }
+  .pseudo, .email, .password, .cpassword{
+    border-radius: 14px;
+    height: 50px;
+    width: 380px;
+    margin-top: 8px;
+    padding-left: 10px;
+    font-family: verdana;
+    font-size: 18px;
+    background-color: #eaeaea;
+    border: none;
+  }
+  .pseudo:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .email:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .password:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .cpassword:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthday:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthmonth:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthyear:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .sex:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .send{
+    background-color: #68e32a;
+    border-radius: 14px;
+    height: 50px;
+    width: 380px;
+    margin-top: 16px;
+    padding-left: 10px;
+    font-family: verdana;
+    font-size: 18px;
+    border: none;
+  }
+  .register{
+    font-family: Gill Sans, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-indent: 15px;
+  }
+  .CGUbox{
+    margin-top: 12px;
+  }
+  .CGUtext{
+    font-family: verdana;
+    font-size: 14px;
+  }
+  /*LOGIN PAGE*/
+  .formlogin{
+    height: 380px;
+    width: 480px;
+    background-color: white;
+    position: absolute; 
+    top: 62%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 5.2%;
+  }
+  .forgotpassword{
+    font-size: 1.1em;
+    margin-top: 8.8px;
+    text-align: center;
+  }
+  .forgotpassworda:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  .forgotpassworda{ 
+   text-decoration:none;
+   color: #551a8b; 
+  } 
+  .loginform{
+    margin-top: -3.5px;
+    width: 460.8px;
+    height: 398.6px;
+  }
+  .lemail, .lpassword{
+    border-radius: 16px;
+    height: 60.25px;
+    width: 460.8px;
+    margin-top: 10px;
+    padding-left: 14px;
+    font-family: verdana;
+    font-size: 18.4px;
+    background-color: #eaeaea;
+    border: none;
+    border: 2px solid #ffff;
+  }
+  .lpassword:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .lemail:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .lsend{
+    background-color: #42b72a;
+    margin-top: 26px;
+    font-size: 26px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  .lsend:hover{
+    transform: scale(1.06);
+  }
+  .buttonlogin{
+    border-radius: 16px; 
+    height: 46.35px;
+    width: 381.117px;
+    margin-left: 38px;
+  }
+  .buttonloginpa{
+    font-family: verdana;
+    color: #ffff;
+  }
+  .registerbutton{
+    background-color: #0000ff;
+    margin-top: 42.5px;
+    border: none;
+    font-weight: bold;
+    line-height: 40px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  .registerbutton:hover{
+    transform: scale(1.06);
+  }
+  .registera{
+    font-size: 25.1px;  
+    vertical-align:middle;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 71.5px;
+    padding-right: 76px;
+    color: #ffff;
+    text-decoration:none;
+  }
+  .contentlogin{
+    background-color: #1F0BD9;
+    height: 100%;
+    width: 100%;
+  }
+  .bar{
+    background-color: #d6d6dd;
+    height: 1.24px;
+    width: 100%;
+    margin-top: 2.6vh;
+  }
+  .contentloginimage{
+    
+    width: 0;
+    height: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo_name{
+    height: 300px;
+    position: absolute;
+    margin-top: -320px;
+    margin-left: 70px;
+  }
+  .crossdiv{
+    float: right;
+    
+  }
+  .cross{
+    font-size: 43.6px;
+    cursor: pointer;
+    color: #6c6c6c;
+    margin-right: 14px;
+  }
+  .crossdivin, .logo_name_txt{
+    display: none;
+  }
+  .contentlogin, #hide{
+    height: 900px !important;
+  }
+  .formlogin{
+    top: 550px !important;
+  }
+  .form{
+    top: 450px !important;
+  }
+}
+@media screen and (max-height:900px) and (min-width:523px) and (max-width:1279px){
+  .contentlogin, #hide{
+    height: 900px !important;
+  }
+  .formlogin{
+    top: 550px !important;
+  }
+  .logo_name_txt{
+    display: none;
+  }
+}
+@media screen and (max-height:800px) and (max-width:523px){
+  .contentlogin, #hide{
+    height: 800px !important;
+  }
+  .formlogin{
+    top: 450px !important;
+  }
+  .logo_name_txt{
+    display: none;
+  }
+  .form{
+    top: 400px !important;
+  }
+}
+@media screen and (max-width:522px){
+   /*REGISTER PAGE*/
+  .hidencguone{
+    display: none;
+  }
+  .cgu{
+    margin-left: 20px;
+  }
+  .register, .crossdivin{
+    display: inline-block;
+  }
+  .crossdivin{
+    margin-left: 90px;
+    vertical-align: -2.5px;
+  }
+  .crossin{
+    font-size: 42px;
+    cursor: pointer;
+    color: #000;
+  }
+  .form{
+    height: 614px;
+    width: 360px;
+    background-color: white;
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 30px;
+    box-shadow: 5px 4px 6px black;
+  }
+  .registerform, .loginform{
+    position: absolute; 
+    top: 54%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 350px;
+  }
+  .registerform{
+    margin-top: 4px;
+  }
+  .pseudo, .email, .password, .cpassword{
+    border-radius: 14px;
+    height: 50px;
+    width: 347px;
+    margin-top: 8px;
+    padding-left: 10px;
+    font-family: verdana;
+    font-size: 18px;
+    background-color: #eaeaea;
+    border: none;
+    margin-left: 1px;
+  }
+  .pseudo:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .email:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .password:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .cpassword:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthday:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthmonth:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthyear:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .sex:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .send{
+    background-color: #68e32a;
+    border-radius: 14px;
+    height: 50px;
+    width: 320px;
+    margin-top: 16px;
+    padding-left: 10px;
+    font-family: verdana;
+    font-size: 18px;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .register{
+    font-family: Gill Sans, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-indent: 15px;
+  }
+  .CGUbox{
+    margin-top: 12px;
+  }
+  .CGUtext{
+    font-family: verdana;
+    font-size: 12.5px;
+  }
+  /*LOGIN PAGE*/
+  .formlogin{
+    height: 380px;
+    width: 365px;
+    background-color: white;
+    position: absolute; 
+    top: 62%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 5.2%;
+  }
+  .forgotpassword{
+    font-size: 1.1em;
+    margin-top: 8.8px;
+    text-align: center;
+  }
+  .forgotpassworda:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  .forgotpassworda{ 
+   text-decoration:none;
+   color: #551a8b; 
+  } 
+  .loginform{
+    margin-top: 2px;
+    width: 360px;
+    height: 398.6px;
+  }
+  .lemail, .lpassword{
+    border-radius: 16px;
+    height: 60.25px;
+    width: 360px;
+    margin-top: 10px;
+    padding-left: 14px;
+    font-family: verdana;
+    font-size: 18.4px;
+    background-color: #eaeaea;
+    border: none;
+    border: 2px solid #ffff;
+  }
+  .lpassword:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .lemail:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .lsend{
+    background-color: #42b72a;
+    margin-top: 26px;
+    font-size: 26px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  .lsend:hover{
+    transform: scale(1.06);
+  }
+  .buttonlogin{
+    border-radius: 16px; 
+    height: 46.35px;
+    width: 330px;
+    margin-left: 14px;
+  }
+  .buttonloginpa{
+    font-family: verdana;
+    color: #ffff;
+  }
+  .registerbutton{
+    background-color: #0000ff;
+    margin-top: 42.5px;
+    border: none;
+    font-weight: bold;
+    line-height: 40px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  .registerbutton:hover{
+    transform: scale(1.06);
+  }
+  .registera{
+    font-size: 25px;  
+    vertical-align:middle;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 50.5px;
+    padding-right: 46.8px;
+    color: #ffff;
+    text-decoration:none;
+  }
+  .contentlogin{
+    background-color: #1F0BD9;
+    height: 100%;
+    width: 100%;
+  }
+  .bar{
+    background-color: #d6d6dd;
+    height: 1.24px;
+    width: 100%;
+    margin-top: 2.6vh;
+  }
+  .contentloginimage{
+   
+    width: 0;
+    height: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo_name{
+    height: 200px;
+    position: absolute;
+    margin-top: -210px;
+    margin-left: 63px;
+  }
+  .crossdiv, .logo_name_txt{
+    display: none;
+  }
+  .logo_name_txt{
+    display: none;
+  }
+}
+@media screen and (max-width:1279px) and (min-width: 523px){
+  /*REGISTER PAGE*/
+  .hidencgutwo{
+    display: none;
+  }
+  .form{
+    height: 604px;
+    width: 440px;
+    background-color: white;
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 30px;
+    box-shadow: 5px 4px 6px black;
+  }
+  .registerform, .loginform{
+    position: absolute; 
+    top: 54%; left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  .registerform{
+    margin-top: 4px;
+  }
+  .pseudo, .email, .password, .cpassword{
+    border-radius: 14px;
+    height: 50px;
+    width: 380px;
+    margin-top: 8px;
+    padding-left: 10px;
+    font-family: verdana;
+    font-size: 18px;
+    background-color: #eaeaea;
+    border: none;
+  }
+  .pseudo:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .email:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .password:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .cpassword:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthday:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthmonth:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthyear:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .sex:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .send{
+    background-color: #68e32a;
+    border-radius: 14px;
+    height: 50px;
+    width: 380px;
+    margin-top: 16px;
+    padding-left: 10px;
+    font-family: verdana;
+    font-size: 18px;
+    border: none;
+  }
+  .register{
+    font-family: Gill Sans, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-indent: 15px;
+  }
+  .CGUbox{
+    margin-top: 12px;
+  }
+  .CGUtext{
+    font-family: verdana;
+    font-size: 14px;
+  }
+  /*LOGIN PAGE*/
+  .formlogin{
+    height: 380px;
+    width: 480px;
+    background-color: white;
+    position: absolute; 
+    top: 62%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 5.2%;
+  }
+  .forgotpassword{
+    font-size: 1.1em;
+    margin-top: 8.8px;
+    text-align: center;
+  }
+  .forgotpassworda:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  .forgotpassworda{ 
+   text-decoration:none;
+   color: #551a8b; 
+  } 
+  .loginform{
+    margin-top: -3.5px;
+    width: 460.8px;
+    height: 398.6px;
+  }
+  .lemail, .lpassword{
+    border-radius: 16px;
+    height: 60.25px;
+    width: 460.8px;
+    margin-top: 10px;
+    padding-left: 14px;
+    font-family: verdana;
+    font-size: 18.4px;
+    background-color: #eaeaea;
+    border: none;
+    border: 2px solid #ffff;
+  }
+  .lpassword:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .lemail:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .lsend{
+    background-color: #42b72a;
+    margin-top: 26px;
+    font-size: 26px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  .lsend:hover{
+    transform: scale(1.06);
+  }
+  .buttonlogin{
+    border-radius: 16px; 
+    height: 46.35px;
+    width: 381.117px;
+    margin-left: 38px;
+  }
+  .buttonloginpa{
+    font-family: verdana;
+    color: #ffff;
+  }
+  .registerbutton{
+    background-color: #0000ff;
+    margin-top: 42.5px;
+    border: none;
+    font-weight: bold;
+    line-height: 40px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  .registerbutton:hover{
+    transform: scale(1.06);
+  }
+  .registera{
+    font-size: 25.1px;  
+    vertical-align:middle;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 71.5px;
+    padding-right: 76px;
+    color: #ffff;
+    text-decoration:none;
+  }
+  .contentlogin{
+    background-color: #1F0BD9;
+    height: 100%;
+    width: 100%;
+  }
+  .bar{
+    background-color: #d6d6dd;
+    height: 1.24px;
+    width: 100%;
+    margin-top: 2.6vh;
+  }
+  .contentloginimage{
+    
+    width: 0;
+    height: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo_name{
+    height: 300px;
+    position: absolute;
+    margin-top: -320px;
+    margin-left: 70px;
+  }
+  .crossdiv{
+    float: right;
+    
+  }
+  .cross{
+    font-size: 43.6px;
+    cursor: pointer;
+    color: #6c6c6c;
+    margin-right: 14px;
+  }
+  .crossdivin, .logo_name_txt{
+    display: none;
+  }
+  .logo_name_txt{
+    display: none;
+  }
+}
+@media screen and (min-width:1280px) and (min-height:744px){
+  /*REGISTER PAGE*/
+  .hidencgutwo{
+    display: none;
+  }
+  .form{
+    height: 604px;
+    width: 440px;
+    background-color: white;
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 30px;
+    box-shadow: 5px 4px 6px black;
+  }
+  .registerform, .loginform{
+    position: absolute; 
+    top: 54%; left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  .registerform{
+    margin-top: 4px;
+  }
+  .pseudo, .email, .password, .cpassword{
+    border-radius: 14px;
+    height: 50px;
+    width: 380px;
+    margin-top: 8px;
+    padding-left: 10px;
+    font-family: verdana;
+    font-size: 18px;
+    background-color: #eaeaea;
+    border: none;
+  }
+  .pseudo:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .email:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .password:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .cpassword:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthday:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthmonth:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .birthyear:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .sex:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .send{
+    border-radius: 14px;
+    height: 50px;
+    width: 380px;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  .register{
+    font-family: Gill Sans, sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-indent: 15px;
+  }
+  .CGUbox{
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+  .CGUtext{
+    font-family: verdana;
+    font-size: 14px;
+  }
+  /*LOGIN PAGE*/
+  .formlogin{
+    height: 380px;
+    width: 480px;
+    background-color: white;
+    position: absolute; 
+    top: 62%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 5.2%;
+  }
+  .formlogin{
+    height: 380px;
+    width: 480px;
+    background-color: white;
+    position: absolute; 
+    top: 50%; left: 78%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 5.2%;
+  }
+
+  .forgotpassword{
+    font-size: 1.1em;
+    margin-top: 8.8px;
+    text-align: center;
+  }
+  .forgotpassworda:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  .forgotpassworda{ 
+   text-decoration:none;
+   color: #551a8b; 
+  } 
+  .loginform{
+    margin-top: -20px;
+    width: 460.8px;
+    height: 350px;
+  }
+  .lemail, .lpassword{
+    border-radius: 16px;
+    height: 60.25px;
+    width: 460.8px;
+    margin-top: 10px;
+    padding-left: 14px;
+    font-family: verdana;
+    font-size: 18.4px;
+    background-color: #eaeaea;
+    border: none;
+    border: 2px solid #ffff;
+  }
+  .lpassword:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .lemail:focus {
+    border: 3.2px solid #0000ff;
+  }
+  .lsend{
+    background-color: #42b72a;
+    margin-top: 20px;
+    font-size: 26px;
+    border: none;
+    font-weight: bold;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  .lsend:hover{
+    transform: scale(1.06);
+  }
+  .buttonlogin{
+    border-radius: 16px; 
+    height: 46.35px;
+    width: 381.117px;
+    margin-left: 38px;
+    cursor: pointer;
+  }
+  .buttonloginpa{
+    font-family: verdana;
+    color: #ffff;
+  }
+  .registerbutton{
+    background-color: #0000ff;
+    margin-top: 42.5px;
+    border: none;
+    font-weight: bold;
+    line-height: 40px;
+    transform: scale(1);
+    transition: transform 400ms;
+  }
+  .registerbutton:hover{
+    transform: scale(1.06);
+  }
+  .registera{
+    font-size: 25.1px;  
+    vertical-align:middle;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 71.5px;
+    padding-right: 76px;
+    color: #ffff;
+    text-decoration:none;
+  }
+  .contentlogin{
+    background-color: #1F0BD9;
+    height: 100%;
+    width: 45%;
+    float: right;
+  }
+  .bar{
+    background-color: #d6d6dd;
+    height: 1.24px;
+    width: 100%;
+    margin-top: 2.6vh;
+  }
+  .contentloginimage{
+   
+    width: 55%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo_name, .crossdivin{
+    display: none;
+  }
+  .crossdiv{
+    float: right;
+    
+  }
+  .cross{
+    font-size: 43.6px;
+    cursor: pointer;
+    color: #6c6c6c;
+    margin-right: 14px;
+  }
+  .logo_name_txt{
+    height: 100px;
+    margin-top: -134px;
+    margin-left: 50px;
+    position: absolute;
+  }
+}
+.hide{
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  box-sizing:border-box; 
+  outline:none;
+  margin:0;
+  padding:0;
+  font-family: verdana;
+}
+.img_nav_bar{
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-top: 6px;
+  margin-left: 15px;
+  position: absolute;
+}
+.imgnav_bar{
+  width: 45px;
+  height: 45px;
+  margin-top: 2px;
+}
+.linav_bar{
+  list-style: none;
+  display: inline-block;
+}
+.nav_bar{
+  background-color: #1f0bd9;
+  height: 60px;
+  width: 100%;
+  margin-top: -60px;
+}
+.listnav_bar{
+  text-align: center;
+  width: 100%;
+}
+.linav_bar{
+  margin-top: 5px;
+}
+.linav2, .linav3, .linav4{
+  margin-left: 100px;
+}
+.linav1{
+  margin-left: 163px;
+}
+.img_user{
+  width: 40px;
+  height: 40px;
+  margin-right: 14px;
+}
+.name_user{
+  font-size: 25px;
+  color: #ffff;
+  font-family: 'Pacifico', cursive;
+  margin-right: 20px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.content_user{
+  float: right;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.content_nodif{
+  float: right;
+  background: linear-gradient(270deg, rgba(180,180,180,1) 0%, rgba(232,233,235,1) 86%);
+  width: 20.5%;
+}
+.content_service{
+  float: left;
+  background: rgb(201,202,204);
+  background: linear-gradient(90deg, rgba(180,180,180,1) 0%, rgba(232,233,235,1) 86%);
+  width: 20.5%;
+  text-align: center;
+}
+.content_actu{
+  margin: 0 auto;
+  margin-top: 60px;
+  background-color: rgba(232,233,235,1);
+  text-align: center;
+}
+.content_all_inf{
+  height: 1500px;
+}
+footer{
+  z-index: 3!important;
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #0b1616;
+}
+.service_img{
+  width: 45px;
+  height: 45px;
+  margin-right: 14px;
+}
+.service_name{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.service_content{
+  float: right;
+  margin-top: 10px;
+  text-decoration: none;
+  height: 60px;
+  width: 250px;
+  transition: transform 400ms; 
+}
+.service_content:hover{
+  background-color: #cccccc;
+  border-radius: 18px;
+}
+.service_content_label{
+  margin-top: 18px;
+}
+.service_content_img{
+  float: left;
+  margin-top: 5px;
+  margin-left: 16px
+}
+/*Service 1*/
+.service_content_label_one label{
+  margin-left: -57px;
+}
+.service_div_content_one{
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 30px;
+}
+/*Service 2*/
+.service_div_content_two{
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 15px
+}
+/*Service 3*/
+.service_div_content_three{
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 15px
+}
+.service_content_label_three label{
+  margin-left: -76px;
+}
+/*Service 4*/
+.service_div_content_four{
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 15px
+}
+.service_content_label_four label{
+  margin-left: -12px;
+}
+/*Service 5*/
+.service_div_content_five{
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 15px
+}
+.service_content_label_five label{
+  margin-left: -5px;
+}
+/*Publication*/
+.pubtexth1{
+  font-size: 22px;
+  width: 280px;
+  margin-left: 38px;
+  color: #585a5e;
+  margin-top: 15px;
+  font-family:'Roboto', sans-serif;
+}
+.imgpub{
+      
+  height: 35px;
+  width: 35px;
+  margin-left: 32px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.a_pub{
+  width: 100px;
+  height: 45px;
+  display: inline-block;
+}
+.a_pub:hover{
+  background-color: #cccccc;
+  border-radius: 18px;
+}
+.li_pub{
+  display: inline-block;
+}
+.pub_ul{
+  margin-left: 39px;
+  margin-top: 10px
+}
+.pub-bar-notif{
+  height: 2px;
+  background-color: #b1b2b7;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.nonSelectionnableindex{
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+  -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
+}

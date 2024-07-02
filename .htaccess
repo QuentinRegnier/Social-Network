@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ includes/root.php?id=$1 [PT]
+
